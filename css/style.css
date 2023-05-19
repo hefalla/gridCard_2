@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 1.3fr;
+    grid-template-rows: 3fr 2fr 1fr;
+    grid-template-areas: "header aside"
+                        "section aside"
+                        "footer aside";
+}
+
+aside{
+    background: url("../images/fondo.jpg") -100px -150px;
+    /* background-size: cover; */
+    grid-area: aside;
+}
+
+header{
+    grid-area: header;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    /* align-self: center;
+    justify-self: center; */
+}
+
+header img{
+    height: 70%;
+}
+
+section{
+    grid-area: section;
+    display: grid;
+    grid-template-columns: 1.5fr 3fr;
+    background: lightblue;
+}
+
+section img{
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #000;
+    align-self: center;
+    justify-self: center;
+}
+
+.textos{
+    align-self: center;
+    justify-self: left;
+    text-align: center;
+}
+
+footer{
+    grid-area: footer;
+    align-self: center;
+    justify-self: center;
+}
